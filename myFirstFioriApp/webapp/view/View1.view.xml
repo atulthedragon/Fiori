@@ -1,0 +1,41 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="jerry.controller.View1">
+    <Page title="First View">
+        <subHeader>
+            <Toolbar>
+                <SearchField search="onSearch" liveChange="onSearch" />
+            </Toolbar>
+        </subHeader>
+        <headerContent>
+            <Button icon="sap-icon://cart-approval" press="onNext" />
+        </headerContent>
+        <content>
+            <!-- <Button text="Go to next" press="onNext"></Button>-->
+             
+            <List items="{/fruits}" id="myList"  mode="SingleSelectMaster"  selectionChange="onItemPress">
+                <items>
+                    <!--Object List Item is used to display business object-number,number Unit, title,intro,icon-->
+                    <ObjectListItem
+                        title="{name}"
+                        intro="{type}"
+                        icon="{image}"
+                        number="{price}"
+                        numberUnit="{currency}"
+                    >
+                        <firstStatus>
+                            <ObjectStatus text="{stockStatus}" state="{
+                                path:'stockStatus',
+                                formatter:'.formatter.getState'
+                            }" />
+                        </firstStatus>
+                    </ObjectListItem>
+                </items>
+            </List> 
+            
+            <!--<List id="myFruitList">
+            </List>-->
+        </content>
+    <footer>
+    <Toolbar ></Toolbar>
+    </footer>    
+    </Page>
+</mvc:View>

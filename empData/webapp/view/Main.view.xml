@@ -1,0 +1,66 @@
+<mvc:View xmlns:t="sap.ui.table" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" controllerName="jiraya.controller.Main">
+    <App>
+        <pages>
+            <Page title="Employee Form">
+                <content>
+                    <t:Table rows="{/empTab}" alternateRowColors="true" visibleRowCount="5"
+                    selectionMode="Single" rowSelectionChange="onRowSelect">
+                        <t:columns>
+                            <t:Column>
+                                <t:label>
+                                    <Label text="Employee Id" />
+                                </t:label>
+                                <t:template>
+                                    <Text text="{eid}" />
+                                </t:template>
+                            </t:Column>
+                            <t:Column>
+                                <t:label>
+                                    <Label text="Employee Name" />
+                                </t:label>
+                                <t:template>
+                                    <Text text="{ename}" />
+                                </t:template>
+                            </t:Column>
+                            <t:Column>
+                                <t:label>
+                                    <Label text="Salary" />
+                                </t:label>
+                                <t:template>
+                                    <Text text="{salary} {currency}" />
+                                </t:template>
+                            </t:Column>
+
+                        </t:columns>
+                    </t:Table>
+                    <f:Form id="idForm1" editable="true">
+                        <f:formContainers>
+                            <f:FormContainer title="Employee Data">
+                                <f:formElements>
+                                    <f:FormElement label="Employee Number">
+                                        <Input id="idEmpId" type="Number" value="{eid}" placeholder="Enter your Employee Number" />
+                                    </f:FormElement>
+                                    <f:FormElement label="Employee Name">
+                                        <Input id="idEmpName" type="Text" value="{ename}" placeholder="Enter your name" />
+                                    </f:FormElement>
+                                    <f:FormElement label="Salary">
+                                        <Input id="idSal" type="Number" value="{salary}" placeholder="Enter your Salary" />
+                                    </f:FormElement>
+                                    <f:FormElement label="Currency">
+                                        <Input id="idCur" type="Text" value="{currency}" placeholder="Enter currency" />
+                                    </f:FormElement>
+                                </f:formElements>
+                            </f:FormContainer>
+                        </f:formContainers>
+                        <!--Form Layout settings-->
+                        <f:layout>
+                            <f:ResponsiveGridLayout labelSpanXL="4" labelSpanL="3" labelSpanM="4" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="4" emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="1" columnsM="1" singleContainerFullSize="false" />
+                        </f:layout>
+                    </f:Form>
+                    <!--<Button  text="Change" press="onChg"/>
+            <Button  text="Show" press="onShow"/>-->
+                </content>
+            </Page>
+        </pages>
+    </App>
+</mvc:View>

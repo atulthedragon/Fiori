@@ -1,0 +1,98 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:t="sap.ui.table" xmlns:form="sap.ui.layout.form" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" controllerName="jerry.controllers.MyXMLView">
+    <App>
+        <pages>
+            <Page id="myPage" title="{i18n>XTIT_PGT}">
+                <content>
+                    <t:Table id="idTab1" rows="{/empTab}" alternateRowColors="true" 
+                    visibleRowCount="5" selectionMode="Single" rowSelectionChange="onRowSelect">
+                        <t:columns>
+                            <t:Column>
+                                <t:label>
+                                    <Label text="{i18n>XTIT_EMPID}" />
+                                </t:label>
+                                <t:template>
+                                    <Text text="{empId}" />
+                                </t:template>
+                            </t:Column>
+                            <t:Column>
+                                <t:label>
+                                    <Label text="{i18n>XTIT_ENAME}" />
+                                </t:label>
+                                <t:template>
+                                    <Input value="{path:'empName',
+                                    formatter:'.formatter.convertToUpper'}" />
+                                </t:template>
+                            </t:Column>
+                            <t:Column>
+                                <t:label>
+                                    <Label text="{i18n>XTIT_SAL}" />
+                                </t:label>
+                                <t:template>
+                                    <Text text="{
+                                        parts:[{path:'salary'},{path:'currency'}],
+                                        formatter:'.formatter.joinCurrency'
+                                    }" />
+                                </t:template>
+                            </t:Column>
+                            <t:Column>
+                                <t:label>
+                                    <Label text="{i18n>XTIT_SMK}" />
+                                </t:label>
+                                <t:template>
+                                    <CheckBox selected="{smoker}" />
+                                </t:template>
+                            </t:Column>
+                            <t:Column>
+                                <t:label>
+                                    <Label text="{i18n>XTIT_GEN}" />
+                                </t:label>
+                                <t:template>
+                                    <Image height="40px" src="{gender}"></Image>
+                                </t:template>
+                            </t:Column>
+                            <t:Column>
+                                <t:label>
+                                    <Label text="{i18n>XTIT_MSTAT}" />
+                                </t:label>
+                                <t:template>
+                                    <Select selectedKey="{mStat}">
+                                    <items>
+                                    <core:Item key="S" text="Single"></core:Item>
+                                    <core:Item key="M" text="Married"></core:Item>
+                                    </items>
+                                    </Select>
+                                </t:template>
+                            </t:Column>
+                            <t:Column>
+                                <t:label>
+                                    <Label text="{i18n>XTIT_RAT}" />
+                                </t:label>
+                                <t:template>
+                                    <RatingIndicator value="{rating}"></RatingIndicator>        
+                                </t:template>
+                            </t:Column>
+
+                        </t:columns>
+                    </t:Table>
+                    <form:SimpleForm id="idForm" editable="true">
+                        <form:content>
+                            <Label text="{i18n>XTIT_EMPID}" />
+                            <Input value="{empId}" />
+                            <Label text="{i18n>XTIT_ENAME}" />
+                            <Input value="{path:'empName'}" />
+                            <Label text="{i18n>XTIT_SAL}" />
+                            <!--<Input value="{=${/empStr/empName} ==='Atul' ? 500000 : ${/empStr/salary}}" id="idSal"/>-->
+                            <Input value="{salary}" />
+                            <Label text="{i18n>XTIT_CUR}" />
+                            <Input value="{currency}" id="idCurr" />
+                            <Label text="{i18n>XTIT_SMK}" />
+                            <CheckBox selected="{smoker}" />
+                            <Button text="{i18n>XBUT_FLIP}" press="onFlip" />
+                        </form:content>
+                    </form:SimpleForm>
+                    <Button text="{i18n>XBUT_XMLBTN}" press="wallah" />
+                </content>
+            </Page>
+        </pages>
+    </App>
+</mvc:View>

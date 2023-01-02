@@ -1,0 +1,71 @@
+{
+	"empStr": {
+		"empId": "100",
+		"empName": "Ria",
+		"salary": "90000",
+		"currency": "USD",
+		"smoker": true
+	},
+	"empTab": [{
+			"empId": "200",
+			"empName": "Saakshi",
+			"salary": "20000",
+			"currency": "INR",
+			"smoker": false,
+			"gender": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5YTT0C6-OExS4s9tp85npJRftBXHe9DikPjPg2x4r3Q&s",
+			"mStat": "S",
+			"rating": 4
+		},
+		{
+			"empId": "300",
+			"empName": "Atul",
+			"salary": "88000",
+			"currency": "EUR",
+			"smoker": false,
+			"gender": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS17DFliXytxnYTdW9ZUDMkKteM3Wz6ooX6cvibzxnYTw&s",
+			"mStat": "S",
+			"rating": 5
+		},
+{
+			"empId": "400",
+			"empName": "Vandita",
+			"salary": "60000",
+			"currency": "INR",
+			"smoker": true,
+			"gender": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5YTT0C6-OExS4s9tp85npJRftBXHe9DikPjPg2x4r3Q&s",
+			"mStat": "M",
+			"rating": 3
+		},
+		{
+			"empId": "500",
+			"empName": "Sonam",
+			"salary": "75000",
+			"currency": "USD",
+			"smoker": false,
+			"gender": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5YTT0C6-OExS4s9tp85npJRftBXHe9DikPjPg2x4r3Q&s",
+			"mStat": "S",
+			"rating": 2
+
+		}, 
+		{
+			"empId": "600",
+			"empName": "Pushkar",
+			"salary": "68000",
+			"currency": "USD",
+			"smoker": true,
+			"gender": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS17DFliXytxnYTdW9ZUDMkKteM3Wz6ooX6cvibzxnYTw&s",
+			"mStat": "M",
+			"rating": 3
+		},
+		{
+			"empId": "700",
+			"empName": "Vijay",
+			"salary": "68000",
+			"currency": "PNR",
+			"smoker": true,
+			"gender": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS17DFliXytxnYTdW9ZUDMkKteM3Wz6ooX6cvibzxnYTw&s",
+			"mStat": "M",
+			"rating": 2
+		}
+	]
+}

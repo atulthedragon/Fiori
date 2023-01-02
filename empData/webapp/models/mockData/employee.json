@@ -1,0 +1,33 @@
+{
+    "empStr": {
+        "eid": "100",
+        "ename": "Atul",
+        "salary": "90000",
+        "currency": "INR"
+    },
+    "empTab": [{
+            "eid": "200",
+            "ename": "Ankush",
+            "salary": "80000",
+            "currency": "USD"
+        },
+        {
+            "eid": "300",
+            "ename": "Rakshit",
+            "salary": "75000",
+            "currency": "AUD"
+        },
+        {
+            "eid": "400",
+            "ename": "Satyam",
+            "salary": "67000",
+            "currency": "PNR"
+        },
+        {
+            "eid": "500",
+            "ename": "Hitesh",
+            "salary": "83000",
+            "currency": "EUR"
+        }
+    ]
+}

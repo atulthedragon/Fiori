@@ -1,0 +1,24 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="jiraya.controller.View1">
+    <Page title="First Page">
+        <headerContent>
+            <Button icon="sap-icon://action" press="onNext" />
+        </headerContent>
+        <subHeader>
+            <Toolbar>
+                <SearchField search="onSearch" liveChange="onSearch"/>
+            </Toolbar>
+        </subHeader>
+        <content>
+            <List id="myList" items="{/fruits}" selectionChange="onItemPress" mode="SingleSelectMaster">
+                <items>
+                    <ObjectListItem icon="{image}" title="{name}" intro="{type}" number="{price}" numberUnit="{currency}">
+                        <firstStatus>
+                            <ObjectStatus text="{stockStatus}" state="{ path:'stockStatus' , formatter:'.formatter.getState'
+}" />
+                        </firstStatus>
+                    </ObjectListItem>
+                </items>
+            </List>
+        </content>
+    </Page>
+</mvc:View>

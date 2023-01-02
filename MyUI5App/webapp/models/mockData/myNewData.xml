@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<data>
+	<empStr>
+		<empId>100</empId>
+		<empName>Amrita</empName>
+		<salary>87000</salary>
+		<currency>AED</currency>
+        <smoker>true</smoker>
+	</empStr>
+	<empTab>
+		<row>
+			<empId>200</empId>
+			<empName>Kriti</empName>
+			<salary>67000</salary>
+			<currency>USD</currency>
+		</row>
+		<row>
+			<empId>300</empId>
+			<empName>Pinky</empName>
+			<salary>93000</salary>
+			<currency>EUR</currency>
+		</row>
+		<row>
+			<empId>400</empId>
+			<empName>Kanika</empName>
+			<salary>56000</salary>
+			<currency>INR</currency>
+		</row>
+	</empTab>
+</data>

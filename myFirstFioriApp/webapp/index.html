@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Atul Saini">
+        <meta name="description" content="My First Fiori App">
+        <meta name="keywords" content="My First Fiori App,My App">
+        <script src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+        data-sap-ui-libs="sap.m"
+        data-sap-ui-theme="sap_fiori_3"
+        data-sap-ui-resourceroots='{
+            "jerry":"./" 
+        }'
+        data-sap-ui-bindingSyntax="complex"
+        ></script>
+        <script>
+            //Index.html->App.view.xml->View 1,View 2 as page control to be used in pages 
+            //aggregation in App Container Control in App View.	
+             var oView = new sap.ui.view("idApp",{
+                viewName:"jerry.view.App",
+                type:"XML"
+             });
+             oView.placeAt("content");
+ </script>
+
+    </head>
+    <body class="sapUiBody">
+        <div id="content"></div>
+    </body>
+</html>

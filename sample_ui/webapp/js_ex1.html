@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Atul">
+        <meta name="description" content="JS Exercise 1">
+        <meta name="keywords" content="JS Exercise 1,JS,Exercise 1">
+        <script src="js/js_ex.js">
+        </script>
+    </head>
+    <body>
+        <div class="button"><button onclick="getLink('website')">Click to go to website</button></div>
+        <div class="button"><button onclick="getLink('youtube')">Click to go to youtube channel</button></div>
+        <div><h4>Premier League Data</h4></div>
+        <table id="idTab">
+            <thead>
+                <tr>
+                    <th>Team</th>
+                    <th>Captain</th>
+                    <th>Owner</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Liverpool</td>
+                    <td>Jordan Henderson</td>
+                    <td>Fenway Sports Group</td>
+                </tr>
+                <tr>
+                    <td>Arsenal</td>
+                    <td>Martin Odegaard</td>
+                    <td>Kroenke Sports & Entertainment</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Fill the details to add new teams =></p>
+        <table id="idForm">
+            <tbody>
+                <tr>
+                    <td><label>Team Name</label></td>
+                    <td><input id="idTeam"></td>
+                </tr>
+                <tr>
+                    <td><label>Captain</label></td>
+                    <td><input id="idCaptain"></td>
+                </tr>
+                <tr>
+                    <td><label>Owner</label></td>
+                    <td><input id="idOwner"></td>
+                </tr>
+            </tbody>
+        </table>
+        <button onclick="onAdd()" style="color: forestgreen;">Add Team</button>
+    </body>
+</html>
