@@ -1,0 +1,15 @@
+{
+  "name": "empdata",
+  "version": "1.0.0",
+  "description": "Employee Data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Employee",
+    "Data"
+  ],
+  "author": "Atul Saini",
+  "license": "ISC"
+}

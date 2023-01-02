@@ -1,0 +1,7 @@
+<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" controllerName="jiraya.controller.Empty">
+<Page title="Empty View"> 
+<content>
+<Label text="Select an item to display the details"/>
+</content>
+</Page>
+</mvc:View>

@@ -1,0 +1,15 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="jerry.controller.Empty">
+<Page title="Empty View"> 
+<content> 
+    <Button xmlns="sap.m" text="Wallah" id="button0" activeIcon="sap-icon://accept"/> 
+</content> 
+<footer> 
+    <Toolbar width="100%" id="toolbar1"> 
+        <content> 
+            <ToolbarSpacer id="spacer0"/> 
+            <Button text="Button" id="button1"/> 
+        </content> 
+    </Toolbar> 
+</footer> 
+</Page>
+</mvc:View>

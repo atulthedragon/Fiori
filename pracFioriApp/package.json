@@ -1,0 +1,16 @@
+{
+  "name": "pracfioriapp",
+  "version": "1.0.0",
+  "description": "Practice Fiori App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Pratice",
+    "Fiori",
+    "App"
+  ],
+  "author": "Atul Saini",
+  "license": "ISC"
+}

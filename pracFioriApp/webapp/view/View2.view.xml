@@ -1,0 +1,26 @@
+<mvc:View  xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="jiraya.controller.View2" xmlns:core="sap.ui.core">
+    <Page id="idPg2" title="Second Page">
+        <!--<Label text="{name}"></Label>-->
+        <ObjectHeader icon="{image}" title="{name}" intro="{healthBenefits}" number="{price}" numberUnit="{currency}" />
+        <IconTabBar>
+            <items>
+                <IconTabFilter icon="sap-icon://product" iconColor="Positive" text="Fruit Detail" key="fruitDetail" count="5">
+                 <!--<core:Fragment fragmentName="jiraya.fragments.fruitDisplay" type="XML" />
+                 <core:Fragment fragmentName="jiraya.fragments.fruitChange" type="XML" />    
+                -->
+                </IconTabFilter>
+                <IconTabFilter icon="sap-icon://supplier" iconColor="Default" text="Supplier Detail" key="supplierDetail" count="10"> 
+                                 <core:Fragment fragmentName="jiraya.fragments.supplierDisplay" type="XML" />
+                </IconTabFilter>
+                <IconTabFilter icon="sap-icon://functional-location" iconColor="Negative" text="City Detail" key="cityDetail" count="15" />
+            </items>
+        </IconTabBar>
+        <footer>
+            <Toolbar>
+                <ToolbarSpacer />
+                <Button text="Approve" type="Accept" press="onApprove" />
+                <Button text="Reject" type="Reject" press="onReject" />
+            </Toolbar>
+        </footer>
+    </Page>
+</mvc:View>

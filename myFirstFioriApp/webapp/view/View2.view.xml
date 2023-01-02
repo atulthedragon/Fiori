@@ -1,0 +1,27 @@
+<mvc:View xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="jerry.controller.View2">
+    <Page id="idPg2" title="Second View">
+        <content>
+            <!--<Button text="Back" press="onBack"></Button>
+    <Label text="{name}"></Label>-->
+            <ObjectHeader intro="{healthBenefits}" title="{name}" icon="{image}" number="{price}" numberUnit="{currency}" />
+            <IconTabBar>
+                <items>
+                    <IconTabFilter text="Fruit Details" key="fruit" icon="sap-icon://product" iconColor="Positive" count="5">
+                            <core:Fragment fragmentName="jerry.fragments.FruitData" type="XML"></core:Fragment>
+                    </IconTabFilter>
+                    <IconTabFilter text="Supplier Details" key="suppler" icon="sap-icon://supplier" iconColor="Negative" count="10">
+                    <core:Fragment fragmentName="jerry.fragments.supplierData" type="XML" />
+                     </IconTabFilter>
+                    <IconTabFilter text="Cities" key="cities" icon="sap-icon://functional-location" iconColor="Default" count="15" />
+                </items>
+            </IconTabBar>
+        </content>
+        <footer>
+            <Toolbar>
+                <ToolbarSpacer />
+                <Button text="Approve" type="Accept" press="onApprove" />
+                <Button text="Reject" type="Reject" press="onReject" />
+            </Toolbar>
+        </footer>
+    </Page>
+</mvc:View>

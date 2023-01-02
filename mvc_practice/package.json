@@ -1,0 +1,15 @@
+{
+  "name": "mvc_practice",
+  "version": "1.0.0",
+  "description": "MVC Practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "MVC",
+    "Practice"
+  ],
+  "author": "Atul Saini",
+  "license": "ISC"
+}

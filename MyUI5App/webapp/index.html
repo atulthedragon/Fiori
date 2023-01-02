@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Atul Saini">
+        <meta name="description" content="My UI5 App">
+        <meta name="keywords" content="My UI5 App,UI5,My App">
+        <script src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+        data-sap-ui-libs="sap.m"
+        data-sap-ui-theme="sap_fiori_3"
+        data-sap-ui-resourceroots='{
+            "jerry":"./" 
+        }'
+        data-sap-ui-bindingSyntax="complex"
+        ></script>
+        <script>
+             var oView = new sap.ui.view("idSpider",{
+                viewName:"jerry.views.Main",
+                type:"JS"
+             });
+             //oView.placeAt("content");
+             var oViewXML = new sap.ui.view("idXML",{
+                viewName:"jerry.views.MyXMLView",
+                type:"XML"
+             });
+             oViewXML.placeAt("content2");
+ //index.html will create view and getControllerName will get the controller name
+//SAPUI5 framework will create controller object using the controller name. 
+//OnInit method is constructor of controller object and is called. Then, next method of view
+//createContent will be called and controller object will be passed 
+ </script>
+
+    </head>
+    <body class="sapUiBody">
+        <div id="content"></div>
+        <div id="content2"></div>
+    </body>
+</html>

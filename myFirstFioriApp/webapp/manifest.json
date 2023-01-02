@@ -1,0 +1,6 @@
+{
+    "sap.app": {
+        "id": "idMyFiori",
+        "type": "application"
+        }
+    }

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Atul Saini">
+        <meta name="description" content="MVC Practice">
+        <meta name="keywords" content="MVC Practice,MVC,Practice">
+        <script src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+        data-sap-ui-libs="sap.m"
+        data-sap-ui-theme="sap_bluecrystal"
+        data-sap-ui-resourceroots='{
+            "tobirama":"./"
+        }'
+        ></script>
+        <script>
+            var oView = new sap.ui.view("idMain",{
+                viewName:"tobirama.view.Main",
+                type:"JS"
+            });
+            oView.placeAt("content");
+        </script>
+    </head>
+    <body class="sapUiBody">
+        <div id="content"></div>
+    </body>
+</html>
